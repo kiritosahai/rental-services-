@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent & Track Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Rent Anything You Need</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Track</a>
+            <a href="#">Chatbot</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Available Products</h2>
+            <div class="product-list">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="tracker">
+            <h2>Track Your Rental</h2>
+            <input type="text" id="trackId" placeholder="Enter Product ID">
+            <button onclick="trackProduct()">Track</button>
+            <p id="trackingResult"></p>
+        </section>
+
+        <section id="chatbot">
+            <h2>AI Chatbot</h2>
+            <div id="chatbox">
+                <div id="messages"></div>
+                <input type="text" id="userInput" placeholder="Ask something..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Rent & Track | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
